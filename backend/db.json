@@ -1,0 +1,579 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "cliente@exemplo.com",
+      "password": "$2a$10$XgXB7bvGJX5vwcMJtq.KxuBEfuQlKGALm2jVJhzcaMF.U8JZGIjAa",
+      "firstName": "João",
+      "lastName": "Silva",
+      "phone": "11987654321",
+      "birthDate": "1990-01-15",
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "addresses": [
+        {
+          "id": 1,
+          "street": "Rua das Flores",
+          "number": "123",
+          "complement": "Apto 45",
+          "neighborhood": "Jardim Primavera",
+          "city": "São Paulo",
+          "state": "SP",
+          "zipCode": "01234567",
+          "isDefault": true,
+          "createdAt": "2025-01-01T00:00:00.000Z"
+        }
+      ],
+      "paymentMethods": [
+        {
+          "id": 1,
+          "cardNumber": "**** **** **** 1234",
+          "cardHolder": "JOAO SILVA",
+          "expiryMonth": "12",
+          "expiryYear": "2028",
+          "cardType": "visa",
+          "isDefault": true,
+          "createdAt": "2025-01-01T00:00:00.000Z"
+        }
+      ],
+      "preferences": {
+        "emailNotifications": true,
+        "smsNotifications": false,
+        "newsletter": true
+      },
+      "security": {
+        "twoFactorEnabled": false
+      },
+      "favorites": [1, 3, 5]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Smartphone Loberiam X1 Pro",
+      "slug": "smartphone-loberiam-x1-pro",
+      "description": "O mais avançado smartphone da linha Loberiam, com câmera de 108MP, tela AMOLED de 6.7 polegadas e processador de última geração.",
+      "price": 3999.99,
+      "discountPrice": 3599.99,
+      "category": "eletronicos",
+      "subcategory": "smartphones",
+      "brand": "Loberiam",
+      "stock": 50,
+      "rating": 4.8,
+      "reviewCount": 124,
+      "salesCount": 876,
+      "new": true,
+      "featured": true,
+      "bestSeller": true,
+      "images": [
+        "/assets/images/products/smartphone-x1-pro-1.jpg",
+        "/assets/images/products/smartphone-x1-pro-2.jpg",
+        "/assets/images/products/smartphone-x1-pro-3.jpg"
+      ],
+      "specifications": {
+        "processor": "Octa-core 2.8GHz",
+        "memory": "12GB RAM",
+        "storage": "256GB",
+        "screen": "6.7\" AMOLED",
+        "battery": "5000mAh",
+        "camera": "108MP + 12MP + 8MP"
+      },
+      "colors": ["Preto", "Azul", "Prata"],
+      "createdAt": "2025-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Notebook Loberiam UltraBook",
+      "slug": "notebook-loberiam-ultrabook",
+      "description": "Notebook ultrafino com processador de alta performance, ideal para trabalho e entretenimento com bateria de longa duração.",
+      "price": 5499.99,
+      "discountPrice": null,
+      "category": "eletronicos",
+      "subcategory": "notebooks",
+      "brand": "Loberiam",
+      "stock": 30,
+      "rating": 4.6,
+      "reviewCount": 87,
+      "salesCount": 342,
+      "new": false,
+      "featured": true,
+      "bestSeller": false,
+      "images": [
+        "/assets/images/products/notebook-ultrabook-1.jpg",
+        "/assets/images/products/notebook-ultrabook-2.jpg"
+      ],
+      "specifications": {
+        "processor": "Intel Core i7 11ª Geração",
+        "memory": "16GB RAM",
+        "storage": "512GB SSD",
+        "screen": "15.6\" Full HD IPS",
+        "battery": "12 horas",
+        "weight": "1.3kg"
+      },
+      "colors": ["Prata", "Grafite"],
+      "createdAt": "2025-01-05T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Tênis Esportivo FlexRun",
+      "slug": "tenis-esportivo-flexrun",
+      "description": "Tênis leve e confortável para corridas e atividades físicas, com tecnologia de amortecimento e respirabilidade.",
+      "price": 299.99,
+      "discountPrice": 249.99,
+      "category": "esportes",
+      "subcategory": "calcados",
+      "brand": "FlexSport",
+      "stock": 100,
+      "rating": 4.5,
+      "reviewCount": 210,
+      "salesCount": 1250,
+      "new": false,
+      "featured": false,
+      "bestSeller": true,
+      "images": [
+        "/assets/images/products/tenis-flexrun-1.jpg",
+        "/assets/images/products/tenis-flexrun-2.jpg",
+        "/assets/images/products/tenis-flexrun-3.jpg"
+      ],
+      "specifications": {
+        "material": "Mesh respirável",
+        "solado": "Borracha antiderrapante",
+        "tecnologia": "FlexCushion",
+        "indicado": "Corrida e caminhada"
+      },
+      "colors": ["Preto", "Azul", "Vermelho", "Branco"],
+      "sizes": [38, 39, 40, 41, 42, 43, 44],
+      "createdAt": "2025-01-10T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "name": "Camiseta Básica Premium",
+      "slug": "camiseta-basica-premium",
+      "description": "Camiseta de algodão de alta qualidade, confortável e durável, ideal para o dia a dia.",
+      "price": 89.99,
+      "discountPrice": null,
+      "category": "moda",
+      "subcategory": "camisetas",
+      "brand": "EssentialWear",
+      "stock": 200,
+      "rating": 4.3,
+      "reviewCount": 178,
+      "salesCount": 2100,
+      "new": false,
+      "featured": false,
+      "bestSeller": true,
+      "images": [
+        "/assets/images/products/camiseta-premium-1.jpg",
+        "/assets/images/products/camiseta-premium-2.jpg"
+      ],
+      "specifications": {
+        "material": "100% Algodão",
+        "gola": "Redonda",
+        "manga": "Curta",
+        "lavagem": "Máquina"
+      },
+      "colors": ["Preto", "Branco", "Cinza", "Azul Marinho"],
+      "sizes": ["P", "M", "G", "GG"],
+      "createdAt": "2025-01-15T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "name": "Smart TV Loberiam 55\" 4K",
+      "slug": "smart-tv-loberiam-55-4k",
+      "description": "Smart TV com resolução 4K, sistema operacional intuitivo e design sem bordas para uma experiência imersiva.",
+      "price": 3299.99,
+      "discountPrice": 2899.99,
+      "category": "eletronicos",
+      "subcategory": "tvs",
+      "brand": "Loberiam",
+      "stock": 40,
+      "rating": 4.7,
+      "reviewCount": 156,
+      "salesCount": 720,
+      "new": true,
+      "featured": true,
+      "bestSeller": false,
+      "images": [
+        "/assets/images/products/smart-tv-55-1.jpg",
+        "/assets/images/products/smart-tv-55-2.jpg"
+      ],
+      "specifications": {
+        "tamanho": "55 polegadas",
+        "resolucao": "4K Ultra HD",
+        "sistema": "SmartOS 3.0",
+        "conexoes": "4x HDMI, 3x USB",
+        "audio": "Dolby Atmos"
+      },
+      "colors": ["Preto"],
+      "createdAt": "2025-01-20T00:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "name": "Fone de Ouvido Bluetooth Loberiam AirSound",
+      "slug": "fone-de-ouvido-bluetooth-loberiam-airsound",
+      "description": "Fones de ouvido sem fio com cancelamento de ruído, qualidade de áudio premium e bateria de longa duração.",
+      "price": 599.99,
+      "discountPrice": 499.99,
+      "category": "eletronicos",
+      "subcategory": "audio",
+      "brand": "Loberiam",
+      "stock": 80,
+      "rating": 4.6,
+      "reviewCount": 203,
+      "salesCount": 1450,
+      "new": true,
+      "featured": true,
+      "bestSeller": true,
+      "images": [
+        "/assets/images/products/fone-airsound-1.jpg",
+        "/assets/images/products/fone-airsound-2.jpg",
+        "/assets/images/products/fone-airsound-3.jpg"
+      ],
+      "specifications": {
+        "tipo": "In-ear",
+        "conexao": "Bluetooth 5.2",
+        "bateria": "30 horas",
+        "microfone": "Integrado",
+        "resistencia": "IPX5 (resistente à água)"
+      },
+      "colors": ["Preto", "Branco", "Azul"],
+      "createdAt": "2025-01-25T00:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "name": "Sofá Retrátil 3 Lugares",
+      "slug": "sofa-retratil-3-lugares",
+      "description": "Sofá confortável com assentos retráteis e encosto reclinável, ideal para sua sala de estar.",
+      "price": 2199.99,
+      "discountPrice": 1899.99,
+      "category": "casa-decoracao",
+      "subcategory": "moveis",
+      "brand": "ComfortHome",
+      "stock": 15,
+      "rating": 4.4,
+      "reviewCount": 89,
+      "salesCount": 320,
+      "new": false,
+      "featured": true,
+      "bestSeller": false,
+      "images": [
+        "/assets/images/products/sofa-retratil-1.jpg",
+        "/assets/images/products/sofa-retratil-2.jpg"
+      ],
+      "specifications": {
+        "material": "Suede",
+        "estrutura": "Madeira de reflorestamento",
+        "largura": "240cm",
+        "altura": "95cm",
+        "profundidade": "150cm (aberto)"
+      },
+      "colors": ["Cinza", "Bege", "Marrom"],
+      "createdAt": "2025-02-01T00:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "name": "Kit Skincare Facial Completo",
+      "slug": "kit-skincare-facial-completo",
+      "description": "Kit completo para cuidados com a pele, incluindo limpador, tônico, sérum e hidratante para todos os tipos de pele.",
+      "price": 249.99,
+      "discountPrice": 199.99,
+      "category": "beleza-saude",
+      "subcategory": "skincare",
+      "brand": "NaturalGlow",
+      "stock": 60,
+      "rating": 4.8,
+      "reviewCount": 145,
+      "salesCount": 890,
+      "new": true,
+      "featured": false,
+      "bestSeller": true,
+      "images": [
+        "/assets/images/products/kit-skincare-1.jpg",
+        "/assets/images/products/kit-skincare-2.jpg"
+      ],
+      "specifications": {
+        "tipo_pele": "Todos os tipos",
+        "conteudo": "4 produtos",
+        "volume": "50ml cada",
+        "ingredientes": "Ácido hialurônico, vitamina C, niacinamida"
+      },
+      "createdAt": "2025-02-05T00:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "name": "Bicicleta Infantil Aro 16",
+      "slug": "bicicleta-infantil-aro-16",
+      "description": "Bicicleta colorida e resistente para crianças, com rodinhas removíveis e design divertido.",
+      "price": 399.99,
+      "discountPrice": 349.99,
+      "category": "infantil",
+      "subcategory": "brinquedos",
+      "brand": "KidsFun",
+      "stock": 35,
+      "rating": 4.7,
+      "reviewCount": 112,
+      "salesCount": 430,
+      "new": false,
+      "featured": false,
+      "bestSeller": false,
+      "images": [
+        "/assets/images/products/bicicleta-infantil-1.jpg",
+        "/assets/images/products/bicicleta-infantil-2.jpg"
+      ],
+      "specifications": {
+        "aro": "16 polegadas",
+        "material": "Aço carbono",
+        "freios": "V-brake",
+        "idade_recomendada": "4 a 7 anos",
+        "peso_maximo": "40kg"
+      },
+      "colors": ["Azul", "Rosa", "Verde"],
+      "createdAt": "2025-02-10T00:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "name": "Conjunto de Panelas Antiaderentes",
+      "slug": "conjunto-de-panelas-antiaderentes",
+      "description": "Conjunto com 5 panelas de alta qualidade, antiaderentes e com tampas de vidro temperado.",
+      "price": 499.99,
+      "discountPrice": null,
+      "category": "casa-decoracao",
+      "subcategory": "cozinha",
+      "brand": "ChefPro",
+      "stock": 25,
+      "rating": 4.5,
+      "reviewCount": 98,
+      "salesCount": 380,
+      "new": false,
+      "featured": true,
+      "bestSeller": false,
+      "images": [
+        "/assets/images/products/conjunto-panelas-1.jpg",
+        "/assets/images/products/conjunto-panelas-2.jpg"
+      ],
+      "specifications": {
+        "material": "Alumínio com revestimento antiaderente",
+        "tampas": "Vidro temperado",
+        "cabos": "Baquelite antitérmico",
+        "pecas": "5 panelas + 5 tampas",
+        "compatibilidade": "Todos os fogões, incluindo indução"
+      },
+      "colors": ["Preto", "Vermelho"],
+      "createdAt": "2025-02-15T00:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "items": [
+        {
+          "id": 1,
+          "name": "Smartphone Loberiam X1 Pro",
+          "price": 3599.99,
+          "quantity": 1,
+          "image": "/assets/images/products/smartphone-x1-pro-1.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Fone de Ouvido Bluetooth Loberiam AirSound",
+          "price": 499.99,
+          "quantity": 1,
+          "image": "/assets/images/products/fone-airsound-1.jpg"
+        }
+      ],
+      "shippingAddress": {
+        "id": 1,
+        "street": "Rua das Flores",
+        "number": "123",
+        "complement": "Apto 45",
+        "neighborhood": "Jardim Primavera",
+        "city": "São Paulo",
+        "state": "SP",
+        "zipCode": "01234567"
+      },
+      "paymentMethod": {
+        "id": 1,
+        "cardNumber": "**** **** **** 1234",
+        "cardType": "visa"
+      },
+      "shippingMethod": {
+        "name": "Entrega Expressa",
+        "price": 25.90,
+        "estimatedDelivery": "3-5 dias úteis"
+      },
+      "status": "delivered",
+      "subtotal": 4099.98,
+      "shipping": 25.90,
+      "discount": 0,
+      "total": 4125.88,
+      "createdAt": "2025-03-10T14:30:00.000Z",
+      "updatedAt": "2025-03-15T10:20:00.000Z",
+      "orderNumber": "LS-123456"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "items": [
+        {
+          "id": 8,
+          "name": "Kit Skincare Facial Completo",
+          "price": 199.99,
+          "quantity": 1,
+          "image": "/assets/images/products/kit-skincare-1.jpg"
+        }
+      ],
+      "shippingAddress": {
+        "id": 1,
+        "street": "Rua das Flores",
+        "number": "123",
+        "complement": "Apto 45",
+        "neighborhood": "Jardim Primavera",
+        "city": "São Paulo",
+        "state": "SP",
+        "zipCode": "01234567"
+      },
+      "paymentMethod": {
+        "id": 1,
+        "cardNumber": "**** **** **** 1234",
+        "cardType": "visa"
+      },
+      "shippingMethod": {
+        "name": "Entrega Padrão",
+        "price": 15.90,
+        "estimatedDelivery": "5-7 dias úteis"
+      },
+      "status": "shipped",
+      "subtotal": 199.99,
+      "shipping": 15.90,
+      "discount": 0,
+      "total": 215.89,
+      "createdAt": "2025-05-05T09:15:00.000Z",
+      "updatedAt": "2025-05-06T11:30:00.000Z",
+      "orderNumber": "LS-234567"
+    }
+  ],
+  "categories": [
+    {
+      "id": "eletronicos",
+      "name": "Eletrônicos",
+      "image": "/assets/images/categories/eletronicos.jpg",
+      "subcategories": [
+        {
+          "id": "smartphones",
+          "name": "Smartphones"
+        },
+        {
+          "id": "notebooks",
+          "name": "Notebooks"
+        },
+        {
+          "id": "tvs",
+          "name": "TVs"
+        },
+        {
+          "id": "audio",
+          "name": "Áudio"
+        }
+      ]
+    },
+    {
+      "id": "moda",
+      "name": "Moda",
+      "image": "/assets/images/categories/moda.jpg",
+      "subcategories": [
+        {
+          "id": "camisetas",
+          "name": "Camisetas"
+        },
+        {
+          "id": "calcas",
+          "name": "Calças"
+        },
+        {
+          "id": "vestidos",
+          "name": "Vestidos"
+        },
+        {
+          "id": "calcados",
+          "name": "Calçados"
+        }
+      ]
+    },
+    {
+      "id": "casa-decoracao",
+      "name": "Casa e Decoração",
+      "image": "/assets/images/categories/casa-decoracao.jpg",
+      "subcategories": [
+        {
+          "id": "moveis",
+          "name": "Móveis"
+        },
+        {
+          "id": "cozinha",
+          "name": "Cozinha"
+        },
+        {
+          "id": "decoracao",
+          "name": "Decoração"
+        }
+      ]
+    },
+    {
+      "id": "esportes",
+      "name": "Esportes",
+      "image": "/assets/images/categories/esportes.jpg",
+      "subcategories": [
+        {
+          "id": "calcados",
+          "name": "Calçados Esportivos"
+        },
+        {
+          "id": "roupas",
+          "name": "Roupas Esportivas"
+        },
+        {
+          "id": "equipamentos",
+          "name": "Equipamentos"
+        }
+      ]
+    },
+    {
+      "id": "beleza-saude",
+      "name": "Beleza e Saúde",
+      "image": "/assets/images/categories/beleza-saude.jpg",
+      "subcategories": [
+        {
+          "id": "skincare",
+          "name": "Skincare"
+        },
+        {
+          "id": "maquiagem",
+          "name": "Maquiagem"
+        },
+        {
+          "id": "perfumes",
+          "name": "Perfumes"
+        }
+      ]
+    },
+    {
+      "id": "infantil",
+      "name": "Infantil",
+      "image": "/assets/images/categories/infantil.jpg",
+      "subcategories": [
+        {
+          "id": "brinquedos",
+          "name": "Brinquedos"
+        },
+        {
+          "id": "roupas",
+          "name": "Roupas Infantis"
+        },
+        {
+          "id": "moveis",
+          "name": "Móveis Infantis"
+        }
+      ]
+    }
+  ]
+}
